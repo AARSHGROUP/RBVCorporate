@@ -1,3 +1,4 @@
+require("dotenv").config();
 var jwt = require("jsonwebtoken");
 // 13.4 here i'll make the add and get service for admin Data than same i'll create like serviceController than some data i'll copy from their
 
