@@ -1,6 +1,6 @@
 const ServiceModel = require("../models/ServiceModel");
 const jwt = require("jsonwebtoken");
-require("dotenv").config();
+// require("dotenv").config();
 
 // 2.1 than i'll export of services to /api/services than
 
@@ -40,10 +40,8 @@ module.exports.addServices = async (req, res) => {
 
     // 15.2 now i'll make the const variable is "userDetail" with await function for bring of token with help of req from headers (where token is saved on fronted in authorization) neither body from backend with ".verify" function of jwt. token this is the first parameters and second paramaeters is secret key "PRIV_123" (this key is bring from server >> controller >> adminController.js file from ".loginAdmin" exports argument) bcs its .verify is taken a two argument and also above mention of "jwt" so that than..
 
-    const userDetail = await jwt.verify(
-      req.headers.authorization,
-      process.env.JWT_SECRET
-    );
+    const userDetail = await jwt.verify(req.headers.authorization, "PRIV_123");
+    console.log("token getting error", userDetail, 44);
 
     // 15.3 now i'll check on console and after giving console than i'll get the "iat (issue at tijme in milliseconds)" with some userDetails and than.
     // console.log(userDetail, 44);

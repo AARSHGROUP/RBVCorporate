@@ -1,4 +1,4 @@
-require("dotenv").config();
+// require("dotenv").config();
 var jwt = require("jsonwebtoken");
 // 13.4 here i'll make the add and get service for admin Data than same i'll create like serviceController than some data i'll copy from their
 
@@ -56,7 +56,8 @@ module.exports.loginAdmin = async (req, res) => {
     // 14.4.4 but our userName or password matched than i'll return of "userExists" and also converted on token and return success for next step like succcess messages, with the making const variable "_token" otherwise if not matched than give message is above mention error is "Username or Password does not exist" than..
 
     // 14.4.5 and than i'll token generate with help of "npm jwt search in browser and copy the package" thna i'll install packages of "npm i jsonwebtoken" in server in new terminal, and here i can give here the expairy date or validate of "jsonwebtoken", and also import with require above, and also below described of jwt with ".sign()" function this ".sign() is taken the one of the object like "userExists"". If this userExists than i'll get the success message and along with i'll give the privateKey (this privatekey "PRIV_123" is defined manually about me so that our password made strong). When i'll get the error than i'll give the code is like this type "{ ...userExists } it's means i can get one by one value which is send of all value" and now i'll get finally token with this type process on console than..
-    const _token = jwt.sign({ ...userExists }, process.env.JWT_SECRET);
+    const _token = jwt.sign({ ...userExists }, "PRIV_123");
+    console.log("admin token getting error", _token, 61);
 
     // and here i can show on console of it
     console.log(userExists, 61);
