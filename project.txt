@@ -1,0 +1,35 @@
+1. first build frontend react using code is 
+2. >>> "npx react-creat-app client"
+and hit enter and open the client folder in vs code 
+3. run in new terminal "npm start" and hit enter than our frontend app is open on browser, but firstly i should have the "node software" install in our system otherwise its app will not open but if have than it'll dafinately open for check of node give ocde is cmd like "node -v" and hit enter
+4. here i'll give the all code inside of app.js like components, such as navbar, footer, container and much while "app.is" is already linked or connect in "index.js" bcs it's index file will also connect with "index.html" file with "root" id 
+
+5. now i'll make the folder is components inside of client >> src "components"
+
+6. and also create file is "NavBar.js" inside of "components" and i'll firstly create a "NavBar" for any project go with point 6.1
+
+
+9. now i'll make the "about.js" pages in frontend with point 8.1
+
+10. Tutorial 3, now i'll also create the images along with title and description add by the admin or by user and will show on frontend, than i'll create firstly api in backend and show the all details in created file is "Carousel.js" file inside of components folder in frontend (React.js ) than firstly go on server >> index.js file on backend with point 10.1
+
+11. Tutorial 4, now still now i'll create all card like title, description and etc with the help of api but now i'll create and add card of all servicess with the help of admin page so that only admin can create of it nor any other person than create firstly admin folder inside fo client >> components and all will have components related to the admin than go on client with point 11.1
+
+12. Tutorial 5 how to short of our admin card according to newest to oldest by title or description or by date than go on vehicle.js file and give the short method before .map function with point 12.1 and same for each components than.. end with 12.5
+
+13. Tutorial 6 here i'll create the firslty AdminModel Schema for giving the all kinds of mongoose model than i'll go on that page AdminModel.js file with point 13.1 than..
+
+14. Tutorial 7, now i'll make the "Add Services Pages" and this pages add only Admin, and Admin can only Create of SubAdmin Id and also admin can give the all access for SubAdmin of add, edit, or delete of services, which admin are already registered, and Admin will have all access like go on any credential pages or services, and normal user can see the all pages without login like services only neither list of admin, admin or SubAdmin details. than firstly i'll create of "admin login api" so that when admin click on logged in button than that time will create a "jwt token" where will be have of user's type like "ADMIN, SubAdmin, USER, and that user type i'll save in our "local storage" and i'll switching of all menubar pages based of user type and than api will verify of this token and match of the registered mail id and password for login and also can give the access for login, and firslty i'll create a client >> components >> admin >> LoginAdmin.js Pages like that "AddAdmin.js" with point 14.1
+
+15. Tutorial 8, if any hacker or user changed of our userType than can easily take of some access and can currupt of our data so that now i'll give some authentication by server or backend than i'll give this page "ServicesAdmin.js" with point 15.1 than..
+
+16. Tutorial 9 now i'll make the latest post animation in home page than i'll go on Home.js file with point 16.1
+
+17. Tutorial 10 now i'll give the function for "image upload" in our services than firstly i'll upload images from frontend by the user and save in backend and after than show on frontend using redux function than i'll go on pages client >> "ServicesAdmin.js" file with point 17.1
+
+18. Tutorial 11 now i'll use a function of Redux and how can i use fo Redux and how can set the API Call one by one with help of Redux, 
+Step of Redux set is 
+First Step - Store Create.
+2nd Step - and them make accessable in whole application.
+3rd Step - and how can i API Call with the help of Redux.
+than now i'll make file store.js for Redux function store in client >> src >> "store.js" than... i'll make the file with point 18.1 than..
