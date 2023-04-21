@@ -21,7 +21,7 @@ const path = require("path");
 // 17.8.1 here i'll give of this destination path for upload of file with making const upload variable, and this upload variable will have to mention in post method of "api/services" of ".addServices" in "serviceController.js" file api path than..
 // const upload = multer({ dest: "uploads/" });
 const app = express();
-const PORT = "https://rbvcorporate.onrender.com" || process.env.PORT_HOST;
+const PORT = process.env.PORT_HOST || 8080;
 
 // if i'm not use of this packages than i'll not getting any response like that title, description or etc.
 
