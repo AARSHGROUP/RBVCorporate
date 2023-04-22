@@ -15,8 +15,8 @@ const path = require("path");
 
 const app = express();
 // Step-1 When i'll import of this code in render.com than i'll give a port is this and go below Step-2
-// const PORT = process.env.PORT_HOST || 8080;
-const PORT = process.env.PORT_HOST || 8000;
+const PORT = process.env.PORT_HOST || 8080;
+// const PORT = process.env.PORT_HOST || 8000;
 
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -84,11 +84,11 @@ app.get("/api/vehicleslider", serviceController.vehicleSlider);
 // },
 
 // Step - 3 and i'll mention of this below two code here. Thats it.
-// app.use(express.static(path.join(__dirname, "./client/build")));
+app.use(express.static(path.join(__dirname, "./client/build")));
 
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
-// });
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
 
 app.get("/", (req, res) => {
   res.send("Hello Er. Avinash!");
