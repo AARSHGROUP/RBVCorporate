@@ -44,7 +44,7 @@ module.exports.loginAdmin = async (req, res) => {
     }
 
     const _token = jwt.sign({ ...userExists }, process.env.JWT_SECRET);
-    console.log("admin token getting error", _token, 61);
+    // console.log("admin token getting success", _token, 61);
 
     // console.log(userExists, 61);
 
