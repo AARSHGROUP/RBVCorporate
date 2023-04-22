@@ -14,7 +14,9 @@ const multer = require("multer");
 const path = require("path");
 
 const app = express();
-const PORT = process.env.PORT_HOST || 8080;
+// Step-1 When i'll import of this code in render.com than i'll give a port is this and go below Step-2
+// const PORT = process.env.PORT_HOST || 8080;
+const PORT = process.env.PORT_HOST || 8000;
 
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -72,11 +74,21 @@ app.get("/api/slider", serviceController.getSlider);
 
 app.get("/api/vehicleslider", serviceController.vehicleSlider);
 
-app.use(express.static(path.join(__dirname, "./client/build")));
+// Step-2 and this script code is mention in server >> package.json file
+// "scripts": {
+//   "test": "echo \"Error: no test specified\" && exit 1",
+//   "start": "node index.js",
+//   "server": "nodemon index.js",
+//   "client": "npm start --prefix ./client",
+//   "dev": "concurrently \"npm start\" \"npm run client\""
+// },
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
+// Step - 3 and i'll mention of this below two code here. Thats it.
+// app.use(express.static(path.join(__dirname, "./client/build")));
+
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
+// });
 
 app.get("/", (req, res) => {
   res.send("Hello Er. Avinash!");
