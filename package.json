@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "homepage": "http://AARSHGROUP.github.io/rbvcorporate,
+  "homepage": "http://AARSHGROUP.github.io/rbvcorporate",
   "description": "",
   "main": "index.js",
   "scripts": {
